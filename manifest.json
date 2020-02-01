@@ -3,11 +3,17 @@
     "name": "人工芝",
     "short_name": "人工芝",
     "description": "GitHubのユーザーページのContributionを草まみれにする拡張機能です.",
-    "version": "1.0",
+    "version": "1.1",
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "19": "icons/icon19.png"
+        },
+        "default_title": "人工芝"
     },
     "content_scripts": [
         {
@@ -16,5 +22,6 @@
             "run_at": "document_start"
         }
     ],
+    "permissions": ["activeTab"],
     "web_accessible_resources": []
 }
